@@ -1,76 +1,115 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="style.css">
-<meta charset="utf-8">
-<title>Timothy Hood's Portfolio</title>
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timothy's Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header> 
+            <div class="logo">
+                <img src="logo2.png" alt="Tim's pic">
+            </div>
+           <!-- <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>-->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#linkedin" class="nav__link">My Contact Info</a></li>
+                </ul>
+            </nav>
+            <br>
+            <a href="#work" class="btn">My Work</a>
+            <a href="#about" class="btn">About Me</a>
+            <a href="#services" class="btn">What do I do</a>
+            <a href="#linkedin" class="btn">Contact Info</a>
+        </header>
 
-<h1 id="top">Timothy Hood</h1>
+        <!--intro-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Timothy Hood</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A Developer and cyber security speacialist</p>
+            <img src="Tim.JPG" alt="picture of Tim Hood" class="intro__img">
+        </section>
 
-<p><a class="one" href="#startA">School Projects</a> | <a class="one" href="#startB">About me</a> | <a class="one" href="#startC">Contact Information</p></a> 
-<h2><img src="Tim.JPG" alt="Profile Pic" style="height:300px;width:300px"></h2>
+        <!--My Services-->
+        <section class="my-services" id="services">
+            <h2 clas="section__title section__title--services">What I do</h2>
+            <p class="section__subtitle section__subtitle--about"></p>
+            <div class="services">
+                <div class="service">
+                    <h3>Web Design and Deveolpment</h3>
+                    <p>I am proficient in most fundmentals of web development, including 
+                        Html, CSS, Javascript, PHP, and even some Mysql.
+                </div><!-- / service -->
 
-<h2 id="startA">School Projects</h2>
+                <div class="service">
+                    <h3>Object Oriented Programming</h3>
+                    <p>During my time at Rowan University I was exposed to various Object oriented design pricipals, and languages
+                        including Java, and C++.
+                </div><!-- / service -->
 
-<dl>
+                <div class="service">
+                    <h3>Cybersecurity anylast, and Pnetration testing</h3>
+                    <p>I have taken many cybersecurity related courses in my educational carrer including courses on information security,
+                        Ethical Hacking, Cyber Foresics, and Pennetration Testing.
 
-<dt></dt>
-<dd><a class="two" href="https://rowanuniversity.maps.arcgis.com/apps/webappviewer/index.html?id=be7fa1e7516849feab9920c5ce3b8d56%5C">Gis Website</a></dd>
+                </div><!-- / service -->
+            </div><!-- / services -->
+
+            
+        </section>
+
+        <!--About me-->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who am I</h2>
+            <p class="section__subtitle section__subtitle--about"></p>
+
+            <div class="about-me__body">
+                <p>I am a recent graduate of Rowan University and aspiring Developer </p>
+                <p>Cyber Security specialist</p>
+                <p>Born and raised in southern New Jersey</p>
+                <p>Automotive enthusist</p>
+                <p></p>
+            </div>
+
+            <img src="cap'n'gown.jpeg" alt="picture of Tim Hood" width="250px" height="250px">
+    </section>
+
+    <!--My Work-->
+    <section class="my-work" id="work">
+        <h2 class="section__title">Examples of my Work</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+        <a  href="https://rowanuniversity.maps.arcgis.com/apps/webappviewer/index.html?id=be7fa1e7516849feab9920c5ce3b8d56%5C" class="btn">Wawa Locations Gis Website</a>
 <br>
-<dt></dt>
-<dd><a class="two" href="http://elvis.rowan.edu/~hoodti33/resume/capstone/index.html">Food Delivery web app</a></dd>
 <br>
-<dt></dt>
-<dd><a class="two" href="http://elvis.rowan.edu/~hoodti33/resume/">Homework Assignments</a></dd>
-
-
-
-</dl>
+        <a  href="http://elvis.rowan.edu/~hoodti33/resume/capstone/index.html" class="btn">Food Delivery web app</a>
 <br>
 <br>
-<br>
-<h2 id="startB">About Me</h2>
-
-
-<dl>
-
-<dt id="degree">Degrees obtained</dt>
-
-<dd id="skills">Bachelor of Arts in Computing and Informatics, with a minor in computer science, and a concentration in Cyber security.</dd>
-<dd id="skills"></ddid>A Certificate in undergraduate study in Management Information Systems</dd>
-
-<dt id="degree">Universities Attended</dt>
-<dd id="skills">Rowan University, 201 Mullica Hill Road, Glassboro, NJ 08028</dd>
-<dd id="skills">start date: August 2018 Graduation date: September 2022</dd>
-<br>
-<br>
-<dt id="degree">Technical Skills</dt>
-
-    <dd id="skills">Javascript</dd>
-    <dd id="skills">Java</dd>
-    <dd id="skills">C++</dd>
-    <dd id="skills">Html</dd>
-    <dd id="skills">PHP</dd>
-    <dd id="skills">MySql</dd>
-</dl>
-<br>
-<br>
+        <a  href="http://elvis.rowan.edu/~hoodti33/resume/" class="btn">Homework Assignments</a>
+    </section>
 <br>
 
-<h2 id="startC">Contact Information</h2>
+    <!-- Footer-->
+    <footer>
+        <section class="my-linkedin" id="linkedin">
+        <!-- replace with your own email address -->
+        <a href="#home" class="btn">Return Home</a>
+        <p>Contact me at:
+        <a href="mailto:timothywhood@gmail.com" class="footer__link">timothywhood@gmail.com</a></p>
+        <ul class="social-list">
+            <p>also Check me out on my Linkedin</p>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/timothy-hood-074a981a5/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BE%2FQgWJK6SguUFbiHwU6LNg%3D%3D">Linkedin</a></li>
 
-<dl>
-    <dt>Email:</dt>
-    <dd>timothywhood@gmail.com</dd>
-    
-    <dt>Phone number</dt>
-    <dd>609-204-7979</dd>
-<dd><a href="https://www.linkedin.com/in/timothy-hood-074a981a5/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BDE8DIdqfQP6Ue12KzkfsKg%3D%3D"><img src="Linkedin.jpeg" alt="likedin" style="width:42px;height:50px;"></a></dd>
-
-</dl>
-<p><a class="one" href="#top">Back to top</a></p>
-</body>
+        </ul>
+    </section>
+    </footer>
+    </body>
 </html>
-
