@@ -61,7 +61,7 @@ h3 {
 }
 
 h1 {
-    font-size: var(--fs-h1)
+    font-size: 24px;
 }
 h2 {
     font-size: var(--fs-h2)
@@ -93,6 +93,7 @@ h3 {
     padding: .25em 1em;
     font-family: var(--ff-secoundary);
     margin-bottom: 1em;
+
 }
 
 /* header */
@@ -137,7 +138,7 @@ a.btn:link {
     text-decoration: none;
     background-color: #16e0bdff;
     padding: 14px 25px;
-    display: inline-block;
+    display: inline-flex;
   }
   
   /* visited link */
@@ -151,10 +152,72 @@ a.btn:link {
   
   /* mouse over link */
   a.btn:hover {
-    color: hotpink;
+    color: white;
   }
   
   /* selected link */
   a.one :active {
     color: blue;
   }
+
+  .profile-pic {
+      border-radius: 50%;
+  }
+
+  header {
+      background-color: #16e0bdff;
+      justify-content: space-evenly;
+      position: fixed;
+      right: 0;
+      left: 0;
+      z-index: 99999;
+  }
+
+  .social-list {
+    padding: 10px 475px;
+    display: flex;
+  }
+
+  .footer__link {
+    color: black;
+    text-decoration: none;
+    background-color: #16e0bdff;
+    padding: 14px 25px;
+    display: inline-flex;
+  }
+
+  .footer__link:hover {
+    color: white;
+  }
+
+  footer {
+      background-color: grey;
+  }
+  .contact {
+        color: white;
+  }
+  .trademark {
+      color: white;
+      text-align: center;
+      font-size: 10px;
+  }
+  
+  .social-list__link-1{
+      position: relative;
+      left: 50%;
+  }
+
+  .social-list__link-2{
+    position: absolute;
+    left: 45%;
+}
+
+.social-list__link-1{
+    position: absolute;
+    left: 55%;
+}
+  
+.trademark {
+    text-align: center;
+
+}
