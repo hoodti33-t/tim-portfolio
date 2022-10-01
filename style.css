@@ -150,7 +150,13 @@ a.btn:link {
     text-decoration: none;
     background-color: #16e0bdff;
     padding: 14px 25px;
-    display: inline-flex;
+    display: inline-block;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
   }
   
   /* visited link */
@@ -160,11 +166,18 @@ a.btn:link {
     background-color: #16e0bdff;
     padding: 14px 25px;
     display: inline-block;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
   }
   
   /* mouse over link */
   a.btn:hover {
     color: white;
+    transform: scale(1.1);
   }
   
   /* selected link */
@@ -238,9 +251,53 @@ a.btn:link {
     background-color: var(--clr-dark);
     background-image: url(macbook.jpeg);
     background-size: cover;
-    color: var(--clr-light);
+    background-blend-mode: multiply;
+    color: white;
+    text-align: center;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: #16e0bdff;
 }
 
 .service {
-    color: rgb(5, 0, 0);
+    max-width: 500px;
+    margin:0 auto;
 }
+
+@media (min-width: 800px) {
+    .services{
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
+}
+
+/*.about-me {
+    max-width: 100px;
+    margin: 0 auto;
+}
+*/
+.about-me__img {
+    box-shadow: var(--bs);
+    max-width: 200px;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
