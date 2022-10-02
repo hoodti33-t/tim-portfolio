@@ -213,6 +213,7 @@ a.btn:link {
 
   .footer__link:hover {
     color: white;
+    transform: scale(1.1);
   }
 
   footer {
@@ -232,15 +233,27 @@ a.btn:link {
       left: 50%;
   }
 
+  a.social-list__link-1:hover {
+    transform: scale(1.1);
+  }
+
   .social-list__link-2{
     position: absolute;
     left: 45%;
 }
 
-.social-list__link-1{
+a.social-list__link-2:hover {
+    transform: scale(1.1);
+  }
+
+.social-list__link-3{
     position: absolute;
     left: 55%;
 }
+
+a.social-list__link-3:hover {
+    transform: scale(1.1);
+  }
   
 .trademark {
     text-align: center;
@@ -301,3 +314,38 @@ a.btn:link {
     width: 50%;
 }
 
+/*@media (min-width: 400px){
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+        "title-img"
+        "subtitle-img"
+        "text img";
+        grid-column-gap: 2em;
+
+    }
+
+    .section__title--about {
+        grid-area: title;
+    }
+
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -2em;
+        width: clac(100% + 4em);
+    }
+
+    .about-me__img {
+        grid-area: img
+    }
+}
+*/
+.contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
